@@ -12,6 +12,6 @@ script:
 after_install:
     - docker build -t alassani/automated-builds .
     # Log in to the Docker CLI
-    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin alassani/ci
     # Take the image and push it to the Docker Hub
     - docker push alassani/automated-builds
