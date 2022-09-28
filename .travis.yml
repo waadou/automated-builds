@@ -7,11 +7,10 @@ before_install:
 
 script:
     - docker run -e CI=true alassani/automated-builds:dev npm run test
-    - echo 'Alassani ABODJI has finished the build !'
 
 after_install:
     - docker build -t alassani/automated-builds .
     # Log in to the Docker CLI
-    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin alassani/ci
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
     # Take the image and push it to the Docker Hub
     - docker push alassani/automated-builds
