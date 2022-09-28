@@ -1,0 +1,10 @@
+{
+    "author": {
+        "name": "Alassani ABODJI",
+        "email": "abodjialassani@gmail.com",
+        "url": "https:waadsoft.com"
+    },
+    "scripts": {
+        "start": "node app.js"
+    }
+}
