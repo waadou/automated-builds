@@ -10,4 +10,4 @@ script:
     - echo 'Alassani ABODJI has finished the build !'
 
 after_install:
-    -
+    - echo 'Alassani ABODJI has finished the build !'
